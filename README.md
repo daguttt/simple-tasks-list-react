@@ -4,4 +4,8 @@ A project to put on practice some basic react conceptos, and... let's say moreðŸ
 
 ## Concepts and techs used in this project
 
-...(in progress).
+- React Components.
+- Basic Composition.
+- Lifting State Up.
+- Bulma CSS with SASS.
+- Fetching and rendering data from an API.
