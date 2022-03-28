@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TasksWrapper({ children }) {
   return (
-    <table className="table mx-6">
+    <table className="table my-6">
       <thead>
         <tr>
           <th>Estado</th>
