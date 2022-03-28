@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function TaskItem({ id, completed, onChange, children }) {
+export default function TaskItem({ id, completed, onCompleted, children }) {
   const handleChange = (e) => {
-    onChange(Number(e.target.id), e.target.name, e.target.checked);
+    onCompleted(Number(e.target.id), e.target.name, e.target.checked);
   };
   return (
     <tr>

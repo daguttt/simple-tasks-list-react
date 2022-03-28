@@ -27,7 +27,7 @@ function App() {
   }, []);
 
   // Events
-  const handleChange = (id, name, completed) => {
+  const handleCompleted = (id, name, completed) => {
     const updatedTask = { id, title: name, completed };
     const indexTaskToUpdate = tasks.findIndex((task) => task.id === id);
     const newTasks = [...tasks];
@@ -43,7 +43,7 @@ function App() {
           <TaskItem
             id={task.id}
             completed={task.completed}
-            onChange={handleChange}
+            onCompleted={handleCompleted}
             key={task.id}
           >
             {task.title}
