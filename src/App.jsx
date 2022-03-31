@@ -29,11 +29,10 @@ function App() {
   }, []);
 
   // Events
-  const handleCompleted = (id, name, completed) => {
-    const updatedTask = { id, title: name, completed };
-    const indexTaskToUpdate = tasks.findIndex((task) => task.id === id);
-    const newTasks = [...tasks];
-    newTasks.splice(indexTaskToUpdate, 1, updatedTask);
+  const handleCompleted = (completedTask) => {
+    const newTasks = tasks.map((el) =>
+      el.id === completedTask.id ? completedTask : el
+    );
     setTasks(newTasks);
   };
 
